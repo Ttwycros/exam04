@@ -42,7 +42,7 @@ int	main(int argc, char *argv[], char *env[])
 		//count until we have all informations to execute the next child;
 		while (argv[i] && strcmp(argv[i], ";") && strcmp(argv[i], "|"))
 			i++;
-		if (strcmp(argv[0], "cd") == 0) //cd
+		if (strcmp(argv[0], "cd") == 0) //if 0 arg is CD
 		{
 			if (i != 2)
 				ft_putstr_fd2("error: cd: bad arguments\n");
